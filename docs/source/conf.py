@@ -28,7 +28,7 @@ sys.path.insert(0, os.path.abspath(PATH_ROOT))
 FOLDER_GENERATED = 'generated'
 SPHINX_MOCK_REQUIREMENTS = int(os.environ.get('SPHINX_MOCK_REQUIREMENTS', True))
 # fixme
-# builtins.__LIGHTNING_SETUP__ = True
+builtins.__LIGHTNING_SETUP__ = True
 
 import pytorch_lightning  # noqa: E402
 
